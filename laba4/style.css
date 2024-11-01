@@ -1,0 +1,319 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffb6c1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #slider {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #about, #gallery, #video, #recipes {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery-images img {
+    width: 200px;
+    margin: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+  }
+  .swiper-slide img {
+    width: 50%; /* Увеличиваем ширину в 3 раза */
+    height: auto; /* Сохраняем пропорции */
+  }
+  .gallery-images img {
+    width: 20%; /* Увеличиваем ширину в 3 раза */
+    height: auto; /* Сохраняем пропорции */
+  }
+  #recipes {
+    padding: 20px;
+    background-color: #f9f5f0; /* Светлый фон для секции */
+    color: #333;
+  }
+  
+  .recipe {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Белый фон для рецепта */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  }
+  
+  .recipe-title {
+    font-size: 24px;
+    color: #8b4513; /* Цвет шоколада для заголовка */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .ingredients h4,
+  .instructions h4 {
+    font-size: 20px;
+    color: #a0522d; /* Цвет кофе для подзаголовков */
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul, 
+  .instructions ol {
+    padding-left: 20px; /* Отступ слева для списков */
+    margin: 0;
+  }
+  
+  .ingredients ul li,
+  .instructions ol li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .recipe ul li::before {
+    content: "•"; /* Точка перед ингредиентами */
+    color: #8b4513;
+    margin-right: 5px;
+  }
+  
+  .instructions ol li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    padding-left: 5px;
+  }
+  
+  .instructions ol li::before {
+    content: counter(step-counter) ". "; /* Нумерация шагов */
+    font-weight: bold;
+    color: #a0522d;
+  }
+  
+  .recipe-title, .ingredients h4, .instructions h4 {
+    font-family: "Georgia", serif;
+  }
+  
+  .recipe p, .ingredients ul, .instructions ol {
+    font-family: "Arial", sans-serif;
+  }
+  #recipes {
+    padding: 20px;
+    background-color: #f9f5f0; /* Светлый фон для секции */
+    color: #333;
+  }
+  
+  .recipe {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Белый фон для рецепта */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  }
+  
+  .recipe-title {
+    font-size: 24px;
+    color: #8b4513; /* Цвет шоколада для заголовка */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .ingredients h4,
+  .instructions h4 {
+    font-size: 20px;
+    color: #a0522d; /* Цвет кофе для подзаголовков */
+    margin-bottom: 10px;
+  }
+  
+  .ingredients ul, 
+  .instructions ol {
+    padding-left: 20px; /* Отступ слева для списков */
+    margin: 0;
+  }
+  
+  .ingredients ul li,
+  .instructions ol li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .recipe ul li::before {
+    content: "•"; /* Точка перед ингредиентами */
+    color: #8b4513;
+    margin-right: 5px;
+  }
+  
+  .instructions ol li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    padding-left: 5px;
+  }
+  
+  .instructions ol li::before {
+    content: counter(step-counter) ". "; /* Нумерация шагов */
+    font-weight: bold;
+    color: #a0522d;
+  }
+  
+  .recipe-title, .ingredients h4, .instructions h4 {
+    font-family: "Georgia", serif;
+  }
+  
+  .recipe p, .ingredients ul, .instructions ol {
+    font-family: "Arial", sans-serif;
+  }
+  #free-cake {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #request-cake {
+    background-color: #8b4513; /* Цвет шоколадного торта */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #request-cake:hover {
+    background-color: #6f3c0d; /* Темнее при наведении */
+  }
+  
+  /* Стили для модального окна */
+  .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .highlighted-title {
+    border-bottom: 3px solid #ff6347; /* Нижняя граница */
+    padding-bottom: 10px; /* Отступ от текста до границы */
+}
+.highlighted-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Добавление тени */
+}
+.highlighted-title {
+  background: linear-gradient(to right, #ff6347, #ff4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.animated {
+  opacity: 0;  /* Элемент будет невидим по умолчанию */
+  transform: translateY(50px); /*  Сдвиг по вертикали вниз */
+  transition: all 0.5s ease; /* Плавный переход за 0.5 секунды */
+}
+
+.animated.show { 
+  opacity: 1; 
+  transform: translateY(0); /*  Возвращение в исходное положение */
+}
+
+
+body {
+  background-image: url("your_image.jpg"); /*  Замените 'your_image.jpg' на имя вашего изображения */
+}
+.youtube-button {
+  background-color: #000080	; /*  Красный  цвет  фона  */
+  color: white; /*  Белый  цвет  текста  */
+  padding: 10px 20px; /*  Отступы  */
+  border: none; /*  Убираем  рамку  */
+  border-radius: 5px; /*  Скругленные  углы  */
+  text-decoration: none; /*  Убираем  подчеркивание  */
+  cursor: pointer; /*  Изменяем  курсор  мышкой  */
+  display: inline-block; /*  Делаем  кнопку  блочным  элементом  */
+}
+
+.youtube-button:hover {
+  background-color: #FF1493	; /*  Изменяем  цвет  фона  при  наведении  */
+}
+.parallax {
+  position: relative;
+  height: 500px; /*  Измените  высоту  по  необходимости  */
+  overflow: hidden;
+}
+
+.parallax-bg {
+  background-image: url("your_background_image.jpg"); /*  Замените  на  ваше  изображение  */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*  Важно  для  параллакса  */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(0); /*  Используется  для  анимации  */
+  transition: transform 0.5s ease; /*  Плавный  переход  */
+}
+
+.container {
+  position: relative;
+  z-index: 1; /*  Чтобы  контент  был  виден  над  фоном  */
+  padding: 20px;
+}

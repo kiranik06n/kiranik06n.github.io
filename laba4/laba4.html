@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кондитер</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем библиотеку Swiper для слайдера -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header>
+    
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Кондитера</title>
+    
+    <!-- Вставьте CSS-стили здесь -->
+    <style>
+        /* Стили для шапки */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        /* Логотип */
+        .logo {
+            width: 150px; /* Установите нужную ширину */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+        }
+
+        /* Увеличение логотипа при наведении */
+        .logo:hover {
+            transform: scale(1.1); /* Увеличение на 10% при наведении */
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header class="header">
+    <!-- Вставьте логотип сюда -->
+    <img src="logo.png" alt="Логотип Кондитера" class="logo">
+</header>
+
+<!-- Остальная часть содержимого сайта -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Стили для заголовка */
+        .highlighted-title {
+            color: #ff6678; /* Цвет заголовка (например, томатный) */
+            font-size: 2.5em; /* Увеличенный размер текста */
+            font-weight: bold; /* Полужирный текст */
+            font-family: Arial, sans-serif; /* Выбор шрифта */
+            text-align: center; /* Центровка */
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="highlighted-title">Сладости от Кироника)))</h1>
+
+</body>
+</html>
+
+
+    <div class="logo">
+    </div>
+    <nav>
+      <a href="#about">О кондитере</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#recipes">Рецепты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Слайдер</title>
+      <style>
+          /* Стили для слайдера */
+          .slider {
+              position: relative;
+              max-width: 800px; /* Увеличиваем максимальную ширину слайдера */
+              margin: auto;
+              overflow: hidden;
+              border-radius: 10px;
+          }
+  
+          .slides {
+              display: flex;
+              transition: transform 0.5s ease-in-out;
+          }
+  
+          .slide {
+              min-width: 100%;
+              box-sizing: border-box;
+          }
+  
+          .slide img {
+              width: 100%;
+              height: 400px; /* Увеличиваем высоту изображений */
+              object-fit: cover; /* Сохраняем пропорции изображения */
+              border-radius: 10px;
+          }
+  
+          .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background-color: rgba(255, 255, 255, 0.8);
+              border: none;
+              padding: 10px;
+              border-radius: 5px;
+          }
+  
+          .prev {
+              left: 10px;
+          }
+  
+          .next {
+              right: 10px;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <div class="slider">
+      <div class="slides">
+          <div class="slide">
+              <img src="slide1.jpg" alt="Слайд 1">
+          </div>
+          <div class="slide">
+              <img src="slide2.jpg" alt="Слайд 2">
+          </div>
+          <div class="slide">
+              <img src="slide3.jpg" alt="Слайд 3">
+          </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  
+  <script>
+      let slideIndex = 0;
+  
+      function showSlides(n) {
+          const slides = document.querySelectorAll(".slide");
+          if (n >= slides.length) { slideIndex = 0; }
+          if (n < 0) { slideIndex = slides.length - 1; }
+          slides.forEach((slide, index) => {
+              slide.style.display = (index === slideIndex) ? "block" : "none";
+          });
+      }
+  
+      function moveSlide(n) {
+          slideIndex += n;
+          showSlides(slideIndex);
+      }
+  
+      // Показываем первый слайд при загрузке страницы
+      showSlides(slideIndex);
+  
+      // Автоматическая смена слайдов каждые 3 секунды
+      setInterval(() => {
+          slideIndex++;
+          showSlides(slideIndex);
+      }, 3000); // 3000 миллисекунд = 3 секунды
+  </script>
+  
+  </body>
+  </html>
+  
+
+  
+  <section id="about" class="section">
+    <div class="container">
+        <h2 class="animated">О кондитере</h2> 
+        <!-- Блок "О кондитере" -->
+          <p>Меня зовут кироник, и я наркоман, как только я начал принимать, я понял что должен создавать шедевры. На рынке я уже около 3 лет, и готов гарантировать что ваши потребности будут удовлетворены.</p>
+        </section>
+      </div>
+    </section>
+  <!-- Галерея -->
+  <section id="gallery">
+    <section id="about" class="section">
+      <div class="container">
+          <h2 class="animated">Галерея</h2> 
+    <div class="gallery-images">
+      <img src="gallery1.jpg" alt="Торт 1">
+      <img src="gallery2.jpg" alt="Торт 2">
+      <img src="gallery3.jpg" alt="Торт 3">
+      <img src="gallery4.jpg" alt="Торт 4">
+    </div>
+  </section>
+
+  <!-- Видео приготовления -->
+  <section id="video">
+    <section id="about" class="section">
+      <div class="container">
+          <h2 class="animated">Видео приготовления</h2> 
+    <video controls>
+      <source src="cooking-video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </section>
+  <section id="video">
+    <section id="about" class="section">
+      <div class="container">
+          <h2 class="animated">Видео приготовления</h2> 
+    <iframe src="https://www.yapfiles.com/get_player/?v=vMDIxOTA3NDct8b96" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </section>
+  
+  <section id="recipes">
+    <section id="about" class="section">
+      <div class="container">
+          <h2 class="animated">Рецепты</h2> 
+    
+    <article class="recipe">
+      <h3 class="recipe-title">Шоколадный торт</h3>
+      <div class="ingredients">
+        <h4>Ингредиенты:</h4>
+        <ul>
+          <li>200 г шоколада</li>
+          <li>150 г сахара</li>
+          <li>2 яйца</li>
+          <li>100 г муки</li>
+          <li>1 ч. л. разрыхлителя</li>
+        </ul>
+      </div>
+      <div class="instructions">
+        <h4>Шаги приготовления:</h4>
+        <ol>
+          <li>Растопите шоколад на водяной бане.</li>
+          <li>Взбейте яйца с сахаром до пышной массы.</li>
+          <li>Добавьте растопленный шоколад и аккуратно перемешайте.</li>
+          <li>Просейте муку с разрыхлителем и добавьте к тесту.</li>
+          <li>Выпекайте при температуре 180°C около 30 минут.</li>
+        </ol>
+      </div>
+    </article>
+  </section>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="youtube-button">
+    Вы когда-нибудь уходили?
+</a>
+  <section id="recipes">
+    <section id="about" class="section">
+      <div class="container">
+          <h2 class="animated">Рецепты</h2> 
+    
+    <article class="recipe">
+      <h3 class="recipe-title">Секрет Кироника</h3>
+      <div class="ingredients">
+        <h4>Ингредиенты:</h4>
+        <ul>
+          <li>300 г грецких орехов</li>
+          <li>200 г меда</li>
+          <li>150 г сахара</li>
+          <li>100 г сливочного масла</li>
+          <li>1 ч. л. ванильного экстракта</li>
+          <li>200 г шоколада для покрытия</li>
+        </ul>
+      </div>
+      <div class="instructions">
+        <h4>Шаги приготовления:</h4>
+        <ol>
+          <li>Измельчите грецкие орехи в мелкую крошку.</li>
+          <li>В кастрюле растопите сливочное масло и добавьте мед и сахар.</li>
+          <li>Доведите до кипения и варите на среднем огне 5 минут.</li>
+          <li>Добавьте орехи и ванильный экстракт, перемешайте.</li>
+          <li>Вылейте массу на противень и дайте остыть.</li>
+          <li>После остывания нарежьте на порционные кусочки.</li>
+          <li>Растопите шоколад и обмакните каждый кусочек в шоколад.</li>
+          <li>Оставьте на 30 минут до полного застывания шоколада.</li>
+        </ol>
+      </div>
+    </article>
+  </section>
+  <section id="free-cake">
+    <h2>Хотите бесплатный торт?</h2>
+    <button id="request-cake">Нажмите здесь</button>
+    
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>Поставьте много плюсиков, пожалуйста</p>
+      </div>
+    </div>
+  </section>
+<script>
+  // Получаем элементы модального окна и кнопок
+  const modal = document.getElementById("modal");
+  const button = document.getElementById("request-cake");
+  const closeButton = document.querySelector(".close-button");
+
+  // Показываем модальное окно при нажатии на кнопку
+  button.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  // Закрываем модальное окно при нажатии на крестик
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Закрываем модальное окно при клике вне его
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+  
+  
+  <!-- Подвал сайта -->
+  <footer id="contact">
+    <p>Связаться со мной:</p>
+    <div class="social-links">
+      <a href="https://instagram.com">Instagram</a>
+      <a href="https://facebook.com">Facebook</a>
+      <a href="https://vk.com">VK</a>
+    </div>
+  </footer>
+
+  <!-- Подключение Swiper и кастомного JavaScript -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
